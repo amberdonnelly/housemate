@@ -7,58 +7,63 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- MY OWN FILES -->
+  <!-- <link href="/style.css" rel="stylesheet"> -->
+  <!-- <script src="/javascript.js"></script> -->
 </head>
 
 <style>
-    .body-style  div[class^="col"] {
-    	border: 1px solid white;
-    	background: white;
-    	text-align: center;
-    	padding-top: 8px;
-    	padding-bottom: 8px;
-      padding-left: 25px;
-  	}
-    .vertical-center {
-      min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-      min-height: 100vh; /* These two lines are counted as one :-)       */
-      display: flex;
-      align-items: center;
-    }
-    .navbar {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border: 0;
-        border-radius: 0;
-        margin-bottom: 0;
-        font-size: 12px;
-        letter-spacing: 5px;
-    }
-    .navbar-nav  li a:hover {
-        color: #1abc9c !important;
-    }
-    .container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    p { word-wrap: break-word; }
-</style>
 
-<!-- <nav class="navbar navbar-default">
-  <div class="container">
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a class="navbar-toggleable" onclick="showChores()">  CHORES  </a></li>
-        <li><a class="navbar-toggleable" onClick="showExpenses()">  EXPENSES  </a></li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
+  .body-style  div[class^="col"] {
+    border: 1px solid white;
+    background: white;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+  }
+  .vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+     margin:5px;
+     padding:10px;
+     background-color: white;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  p { word-wrap: break-word; }
+  th {
+    text-align: left;
+  }
+  td {
+    text-align: left;
+  }
+
+</style>
 
 <body>
 
@@ -70,10 +75,163 @@
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <p padding-left="50px">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <table class="table" width="100%">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Kitchen</th>
+              <th scope="col">Bathroom</th>
+              <th scope="col">Garbage</th>
+              <th scope="col">Vaccuuming</th>
+              <th scope="col">Plants</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">This Week</th>
+              <td><label class="checkbox-inline"><input type="checkbox" value="">Amber</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="" disabled>Cindy</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="" disabled>Rika</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="">Amber</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="" disabled>Cindy</label></td>
+            </tr>
+            <tr>
+              <th scope="row">1 Week</th>
+              <td><label class="checkbox-inline"><input type="checkbox" value="" disabled>Cindy</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="" disabled>Rika</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="">Amber</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="" disabled>Cindy</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="" disabled>Rika</label></td>
+            </tr>
+            <tr>
+              <th scope="row">2 Weeks</th>
+              <td><label class="checkbox-inline"><input type="checkbox" value="" disabled>Rika</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="">Amber</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="" disabled>Cindy</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="" disabled>Rika</label></td>
+              <td><label class="checkbox-inline"><input type="checkbox" value="">Amber</label></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row">
+          <div class="col-sm-12" width="100%">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-2">
+                  <label for="usr">Task</label>
+                </div>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="usr">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" width="100%">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-2">
+                  <label for="sel1">Frequency</label>
+                </div>
+                <div class="col-sm-10">
+                  <select class="form-control" id="sel1">
+                    <option>Weekly</option>
+                    <option>Every 2 weeks</option>
+                    <option>Every 3 weeks</option>
+                    <option>Monthly</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-primary btn-lg">Add a New Task</button>
+        </div>
       </div>
       <div class="col-sm-6">
-        <p padding-right="50px">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <div class="row">
+          <div class="col-sm-12" width="100%">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-2">
+                  <label for="sel1">Month</label>
+                </div>
+                <div class="col-sm-10">
+                  <select class="form-control" id="sel1">
+                    <option>January 2018</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table class="table" width="100%">
+          <thead>
+            <tr>
+              <th scope="col">Date Added</th>
+              <th scope="col">Purchase</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">11/01/2018</th>
+              <td>Kitchen Sponges</td>
+              <td>$6.50</td>
+              <td>Cindy</td>
+            </tr>
+            <tr>
+              <th scope="row">14/01/2018</th>
+              <td>Garbage Bags</td>
+              <td>$5.28</td>
+              <td>Rika</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row">
+          <div class="col-sm-12" width="100%">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-2">
+                  <label for="usr">Purchase</label>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="col-sm-2">
+                  <label for="usr">Amount ($)</label>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="usr">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" width="100%">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-2">
+                  <label for="sel1">Name</label>
+                </div>
+                <div class="col-sm-10">
+                  <select class="form-control" id="sel1">
+                    <option>Amber</option>
+                    <option>Cindy</option>
+                    <option>Rika</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-primary btn-lg">Add a New Task</button>
+        </div>
       </div>
     </div>
   </div>
