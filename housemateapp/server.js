@@ -18,7 +18,11 @@ router.get("/create",function(req,res){
 
 router.get("/login",function(req,res){
     res.sendFile(path + "login.html");
-  });
+});
+
+router.get("/logo",function(req,res){
+    res.sendFile(path + "housemate-logo.png");
+});
 
 app.use("/",router);
 
