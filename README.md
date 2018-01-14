@@ -11,7 +11,7 @@ This project is a work in progress. It can be run by cloning this reposity and u
 * [Bootstrap](https://getbootstrap.com/)
 * [Node.js](https://nodejs.org/en/)
 * [Express.js](https://expressjs.com/)
-* [Mongo.db](https://www.mongodb.com/)
+* [MongoDB](https://www.mongodb.com/)
 
 ## Authors
 
