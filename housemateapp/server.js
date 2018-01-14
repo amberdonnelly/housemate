@@ -20,8 +20,8 @@ router.get("/login",function(req,res){
     res.sendFile(path + "login.html");
 });
 
-router.get("/logo",function(req,res){
-    res.sendFile(path + "housemate-logo.png");
+router.get("/dash",function(req,res){
+    res.sendFile(path + "dashboard.html");
 });
 
 app.use("/",router);
