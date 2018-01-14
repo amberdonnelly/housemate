@@ -1,6 +1,6 @@
 # HouseMate
 
-Roommate troubles? Someone forgot to take out the garbage AGAIN? Look no further! Everyone in your household can make an account and use the RoomMate web app to automatically schedule chores, get email/SMS reminders, and check for real time updates on other roommate's chore completion. If you bought something for the house, add the expense from your account and receive an automatic monthly calculation of who is owed money at the end of the month. Enjoy your new household synergy.
+Roommate troubles? Someone forgot to take out the garbage AGAIN? Look no further! Everyone in your household can make an account and use the RoomMate web app to automatically schedule chores, get email/SMS reminders, and check for real time updates on other roommate's chore completion. If you bought something for the house, add the expense from your account and receive an automatic calculation of who is owed money at the end of the month. Enjoy your new household synergy.
 
 ## Running This Code
 
