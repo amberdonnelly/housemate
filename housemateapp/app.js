@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var router = express.Router();
 
 var app = express();
 
@@ -52,8 +53,11 @@ const port = 3000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
+  // res.setHeader('Content-Type', 'text/plain');
+  // res.end('Hello World\n');
+  app.get('/', function (req, res) {
+    res.render('index', {title: 'Hey', message: 'Hello there!'});
+  });
 });
 
 server.listen(port, hostname, () => {
